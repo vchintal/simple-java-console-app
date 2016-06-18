@@ -16,6 +16,22 @@
                         <target>1.8</target>
                     </configuration>
                 </plugin>
+                <plugin>
+                  <groupId>org.jboss.hawt.app</groupId>
+                  <artifactId>hawt-app-maven-plugin</artifactId>
+                  <version>1.2</version>
+                  <executions>
+                    <execution>
+                      <goals>
+                        <goal>build</goal>
+                      </goals>
+                      <phase>package</phase>
+                    </execution>
+                  </executions>
+                  <configuration>
+                    <main>org.everythingjboss.console.HelloWorld</main>
+                  </configuration>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
@@ -36,7 +52,4 @@
             <version>1.2.16</version>
         </dependency>
     </dependencies>
-    <properties>
-        <JAVA_MAIN_CLASS>org.everythingjboss.console.HelloWorld</JAVA_MAIN_CLASS>
-    </properties>
 </project>

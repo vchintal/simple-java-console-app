@@ -37,6 +37,6 @@
         </dependency>
     </dependencies>
     <properties>
-        <docker.env.Main>org.everythingjboss.console.HelloWorld</docker.env.Main>
+        <JAVA_MAIN_CLASS>org.everythingjboss.console.HelloWorld</JAVA_MAIN_CLASS>
     </properties>
 </project>
